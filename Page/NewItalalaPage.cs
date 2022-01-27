@@ -18,6 +18,7 @@ namespace Automatinis.Page
         private IWebElement shopButtonSelenium => Driver.FindElement(By.LinkText("Parduotuvė"));
         private IWebElement nitkavosPupeles => Driver.FindElement(By.LinkText("Kavos pupelės"));
         
+        
 
         public NewItalalaPage(IWebDriver webdriver) : base(webdriver)
         { }
