@@ -22,6 +22,7 @@ namespace Automatinis.Page
         public NewItalalaPage(IWebDriver webdriver) : base(webdriver)
         { }
 
+
         public NewItalalaPage NavigateToDefaultPage()
         {
             if (Driver.Url != PageAddress)
@@ -35,13 +36,13 @@ namespace Automatinis.Page
             cookie.Click();
             return this;
         }
+        
         public NewItalalaPage ClosePopUp() //1 būdas pagal Css selectoriu is selenium
         {
             WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(35));
             wait.Until(d => popUpnItalalaPageSelenium.Displayed);
             popUpnItalalaPageSelenium.Click();
             return this;
-
         }
 
         public NewItalalaPage ClosePopUpAtsarginis() // 2 būdas pagal rasta XPath
@@ -51,7 +52,6 @@ namespace Automatinis.Page
             popUpnItalalaPage.Click();
             return this;
         }
-
        
         public NewItalalaPage ClickParduotuveButton()
         {
