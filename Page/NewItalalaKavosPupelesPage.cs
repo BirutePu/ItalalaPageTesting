@@ -32,7 +32,6 @@ namespace Automatinis.Page
             return this;
         }
 
-
         public NewItalalaKavosPupelesPage CloseKukis()
         {
             WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
@@ -55,9 +54,7 @@ namespace Automatinis.Page
             npopUpKavosPupeles.Click();
             return this;
         }
-
-        
-
+ 
         public NewItalalaKavosPupelesPage SelectElSalvador()
         {
             elsalvador.Click();
