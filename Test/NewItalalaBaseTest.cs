@@ -30,7 +30,6 @@ namespace Automatinis.Test
             _newElSalvadorPage = new NewItalalaElSalvadorPage(driver);
             _newTirtiraPage = new NewItalalaTirtiraPage(driver);
             _newRegistrationPage = new NewItalalaRegistrationPage(driver);
-
         }
 
         [TearDown]
