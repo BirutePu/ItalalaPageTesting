@@ -115,11 +115,13 @@ namespace Automatinis.Page
             buttonCartSelenium.Click();
             return this;
         }
+        
         public NewItalalaTirtiraPage GetToCart()
         {
             cartsignSelenium.Click();
             return this;
         }
+        
         //-----------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -158,7 +160,7 @@ namespace Automatinis.Page
             return this;
         }
 
-        //------------------------------------------------------------------------------------------------------------------------------------------------
+      
 
 
 
