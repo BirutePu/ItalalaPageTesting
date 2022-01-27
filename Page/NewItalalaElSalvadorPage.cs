@@ -49,6 +49,7 @@ namespace Automatinis.Page
             SearchResult.Click();//veikia
             return this;
         }
+        
         public NewItalalaElSalvadorPage ClosePopUpAtsarginis() // 2 būdas pagal rasta XPath
         {
             WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(35));
