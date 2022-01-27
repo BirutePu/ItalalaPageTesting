@@ -21,6 +21,7 @@ namespace Automatinis.Page
         private IWebElement tirtiraSelenium => Driver.FindElement(By.LinkText("Ethiopia Tirtira, 250g"));
 
 
+
         public NewItalalaKavosPupelesPage(IWebDriver webdriver) : base(webdriver)
         { }
 
