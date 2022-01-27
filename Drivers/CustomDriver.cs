@@ -38,27 +38,7 @@ namespace Automatinis.Drivers
 
             return driver;
         }
-        //----------------------------------------------------------------------------------------------------------------------------------------------------------------
-        /*public static IWebDriver GetIncognitoChrome()
-               {
-                   return GetDriver(Browsers.IncognitoChrome);
-               }*/
-
-
-        /* case Browsers.IncognitoChrome:
-                    driver = GetChromeWithOptions();
-                    break;*/
-
-
-
-        /* private static IWebDriver GetChromeWithOptions()
-         {
-             ChromeOptions options = new ChromeOptions();
-             options.AddArgument("incognito");
-             options.AddArgument("start-maximized");
-             //options.AddArguments("incognito", "start-maximized");
-             return new ChromeDriver(options);
-
-         }*/
+      
+       
     }
 }
