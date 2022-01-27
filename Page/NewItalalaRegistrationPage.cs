@@ -31,6 +31,7 @@ namespace Automatinis.Page
         public NewItalalaRegistrationPage(IWebDriver webdriver) : base(webdriver)
         { }
 
+
         public NewItalalaRegistrationPage NavigateToDefaultPage()
         {
             if (Driver.Url != PageAddress)
@@ -44,24 +45,28 @@ namespace Automatinis.Page
             emailInputField.SendKeys(emailaddress);
             return this;
         }
+        
         public NewItalalaRegistrationPage InputName(string name)
         {
             nameInputField.Clear();
             nameInputField.SendKeys(name);
             return this;
         }
+        
         public NewItalalaRegistrationPage InputSurname(string surname)
         {
             surnameInputField.Clear();
             surnameInputField.SendKeys(surname);
             return this;
         }
+        
         public NewItalalaRegistrationPage InputHomeAddress(string address)
         {
             addressInputField.Clear();
             addressInputField.SendKeys(address);
             return this;
         }
+        
         public NewItalalaRegistrationPage InputCity(string city)
         {
             cityInputField.Clear();
@@ -94,6 +99,7 @@ namespace Automatinis.Page
             Assert.IsNotNull(addressInputField, "The address is not added");
             return this;
         }
+        
         public NewItalalaRegistrationPage VerifyEmailAdded()
         {
             Assert.IsNotNull(emailInputField, "The address is not added");
@@ -112,7 +118,7 @@ namespace Automatinis.Page
             buttonContinueSelenium.Click();
             return this;
         }
-        //---------------------------------------------------------------------------------------------------------------------------------------------------------------
+        
         
     }
 }
